@@ -1,4 +1,4 @@
-CAPSTONE AWAIR - AIR QUALITY MONITORING
+# CAPSTONE AWAIR - AIR QUALITY MONITORING
 # Awair Project: Air Quality App
 
 ## Overview
@@ -34,4 +34,4 @@ The *Awair Project* aims to provide valuable, real-time air quality information 
 
 Follow these instructions to set up the *Awair Project* on your local machine for development and testing purposes.
 
-### Prerequisites
+### Prerequisites
