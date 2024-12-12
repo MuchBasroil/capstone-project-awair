@@ -1,0 +1,91 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="8dp"
+    android:backgroundTint="#91C8E4">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Icon Bell -->
+        <ImageView
+            android:id="@+id/ivAlertIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/lonceng"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="8dp" />
+
+        <!-- Text Alert -->
+        <TextView
+            android:id="@+id/tvAlertTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/ivAlertIcon"
+            android:layout_alignTop="@id/ivAlertIcon"
+            android:text="Alert"
+            android:textStyle="bold"
+            android:textColor="#455A64"
+            android:textSize="16sp" />
+
+        <!-- Date -->
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@id/ivAlertIcon"
+            android:text="10 Des 2024"
+            android:textSize="14sp"
+            android:textColor="#757575" />
+
+        <!-- Title Description -->
+        <TextView
+            android:id="@+id/tvDescriptionTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvAlertTitle"
+            android:layout_marginTop="8dp"
+            android:layout_alignParentStart="true"
+            android:text="Gunakan Maskermu!"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#000000" />
+
+        <!-- Description -->
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvDescriptionTitle"
+            android:layout_marginTop="4dp"
+            android:text="Gunakan Maskermu! Kualitas udara buruk."
+            android:layout_alignParentStart="true"
+            android:textSize="14sp"
+            android:textColor="#455A64" />
+
+        <!-- Status Badge -->
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/tvDate"
+            android:layout_marginTop="8dp"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="4dp"
+            android:background="@drawable/status_red"
+            android:text="Unhealthy"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

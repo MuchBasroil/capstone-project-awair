@@ -1,94 +1,145 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp"
-    android:background="#F6F4EB">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:paddingTop="32dp"
-            android:paddingBottom="32dp">
-
-            <ImageView
-                android:id="@+id/logo"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:srcCompat="@drawable/baseline_person_24" />
-
-            <TextView
-                android:id="@+id/tvWelcome"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="Welcome!"
-                android:textColor="#000000"
-                android:textSize="28sp"
-                android:textStyle="bold"
-                app:layout_constraintTop_toBottomOf="@id/logo"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" />
-
-            <TextView
-                android:id="@+id/tvSubText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="Log in to your existant account to access"
-                android:textColor="#757575"
-                android:textSize="14sp"
-                app:layout_constraintTop_toBottomOf="@id/tvWelcome"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" />
-
-        </LinearLayout>
+    android:background="#F6F4EB"
+    android:padding="16dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="16dp">
+        android:gravity="center_horizontal">
 
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/logo_profile"
+            android:contentDescription="App Logo" />
+
+        <!-- Welcome Text -->
+        <TextView
+            android:id="@+id/welcomeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Welcome back!"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Subtext -->
+        <TextView
+            android:id="@+id/subText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Log in to your existent account to access"
+            android:textColor="#757575"
+            android:textSize="14sp" />
+
+        <!-- Username Input -->
         <EditText
             android:id="@+id/et_username"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:hint="Username"
-            android:drawableStart="@drawable/baseline_person_outline_24"
-            android:drawablePadding="12dp"
+            android:layout_marginTop="24dp"
+            android:hint="  Username"
+            android:drawableStart="@drawable/ic_user"
             android:background="@drawable/edit_text_rounded"
             android:paddingHorizontal="16dp"
-            android:layout_marginBottom="16dp" />
+            android:inputType="text" />
 
+        <!-- Password Input -->
         <EditText
-            android:id="@+id/password"
+            android:id="@+id/et_password"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:hint="Password"
-            android:drawableStart="@drawable/baseline_lock_open_24"
-            android:drawablePadding="12dp"
+            android:layout_marginTop="16dp"
+            android:hint="  Password"
+            android:drawableStart="@drawable/ic_lock"
             android:background="@drawable/edit_text_rounded"
-            android:paddingHorizontal="16dp" />
+            android:paddingHorizontal="16dp"
+            android:inputType="textPassword" />
+
+        <!-- Forgot Password Link -->
+        <TextView
+            android:id="@+id/tv_forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="end"
+            android:text="Forgot password?"
+            android:textColor="#3B82F6"
+            android:textSize="14sp"
+            android:layout_gravity="end"
+            android:paddingEnd="4dp" />
+
+        <!-- Login Button -->
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#3B82F6"
+            android:text="LOG IN"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <!-- Divider -->
+        <TextView
+            android:id="@+id/tv_divider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Or connect using"
+            android:textColor="#757575"
+            android:textSize="14sp" />
+
+        <!-- Social Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/facebookButton"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="#3C5A99"
+                android:text="Facebook"
+                android:textColor="#FFFFFF"
+                android:paddingHorizontal="16dp" />
+
+            <Button
+                android:id="@+id/googleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:backgroundTint="#DB4437"
+                android:text="Google"
+                android:textColor="#FFFFFF"
+                android:paddingHorizontal="16dp" />
+        </LinearLayout>
+
+        <!-- Signup Link -->
+        <TextView
+            android:id="@+id/tv_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:text="Don't have an account? Sign up"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
     </LinearLayout>
-
-    <TextView
-        android:id="@+id/tvForgotPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="260dp"
-        android:text="Forgot Password?"
-        android:textColor="#525252"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="@id/password"
-        app:layout_constraintTop_toBottomOf="@id/password" />
-
-</LinearLayout>
+</ScrollView>

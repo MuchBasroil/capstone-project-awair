@@ -6,12 +6,14 @@
     android:background="#F6F4EB"
     tools:context=".ui.home.HomeFragment">
 
+    <!-- Only one direct child LinearLayout -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="16dp">
 
+        <!-- Profile Section -->
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -50,178 +52,167 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="175dp"
+            android:layout_height="wrap_content"
             android:background="@drawable/curved_background"
             android:padding="16dp"
             android:layout_marginBottom="24dp">
 
-            <ImageView
-                android:id="@+id/location_icon"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_alignParentStart="true"
-                android:layout_marginEnd="8dp"
-                android:src="@drawable/baseline_room_24"
-                android:contentDescription="Location Icon" />
-
+            <!-- Lokasi -->
             <TextView
-                android:id="@+id/location_text"
+                android:id="@+id/locationText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toEndOf="@id/location_icon"
-                android:text="Wonorejo, Surabaya"
-                android:textColor="#000000"
+                android:text="Surabaya"
+                android:textColor="@color/black"
                 android:textSize="16sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:drawableStart="@drawable/baseline_room_24"
+                android:drawablePadding="8dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="8dp" />
 
-            <ImageView
-                android:id="@+id/info_icon"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_alignParentEnd="true"
-                android:src="@drawable/tanda_seru"
-                android:contentDescription="Info Icon" />
-
-            <View
-                android:id="@+id/separator_line"
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_below="@id/location_icon"
-                android:layout_marginTop="8dp"
-                android:background="#BDBDBD" />
-
+            <!-- Informasi Kualitas Udara -->
             <TextView
                 android:id="@+id/air_quality"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/separator_line"
-                android:layout_marginTop="15dp"
+                android:layout_below="@id/locationText"
+                android:layout_marginTop="8dp"
                 android:text="Good"
-                android:textColor="#000000"
-                android:textSize="50sp"
-                android:textStyle="bold" />
+                android:textColor="@color/black"
+                android:textSize="48sp"
+                android:textStyle="bold"
+                android:layout_alignParentStart="true" />
 
             <TextView
-                android:id="@+id/temperature"
-                android:layout_width="80dp"
-                android:layout_height="60dp"
-                android:layout_toEndOf="@id/air_quality"
-                android:layout_marginStart="50dp"
-                android:layout_marginTop="50dp"
-                android:background="@drawable/curved2"
+                android:id="@+id/dominantPollutant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/locationText"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/rounded_background"
+                android:padding="8dp"
                 android:gravity="center"
-                android:text="34°\nCelcius"
-                android:textColor="#FFFFFF"
-                android:textSize="12sp"
-                android:textStyle="bold" />
+                android:lineSpacingExtra="4dp"
+                android:text="Dom. Pollutant\nN/A: 0.00"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
 
-            <TextView
-                android:id="@+id/wind_speed"
-                android:layout_width="80dp"
-                android:layout_height="60dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="50dp"
-                android:layout_toEndOf="@id/temperature"
-                android:background="@drawable/curved2"
-                android:gravity="center"
-                android:text="15\nKM/H"
-                android:textColor="#FFFFFF"
-                android:textSize="12sp"
-                android:textStyle="bold" />
 
+        </RelativeLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/curved_background">
+
+            <!-- Title -->
             <TextView
-                android:id="@+id/last_updated"
+                android:id="@+id/conditionTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Condition"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+                android:textColor="@android:color/black" />
+
+            <!-- Circle Indicators -->
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/temperature"
-                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
                 android:gravity="center"
-                android:text="Last Updated 07.52 | 22 May 2023"
-                android:textColor="#757575"
-                android:textSize="12sp" />
-        </RelativeLayout>
+                android:layout_marginTop="16dp">
+
+                <!-- Circle for AQI Value -->
+                <LinearLayout
+                    android:id="@+id/aqiCircle"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:gravity="center"
+                    android:background="@drawable/circle_green">
+
+                    <TextView
+                        android:id="@+id/aqiValueText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="500.8 AQI"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/white"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <!-- Circle for Condition Label -->
+                <LinearLayout
+                    android:id="@+id/conditionCircle"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="16dp"
+                    android:gravity="center"
+                    android:background="@drawable/circle_red">
+
+                    <TextView
+                        android:id="@+id/conditionLabelText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:textSize="16sp"
+                        android:textColor="@android:color/white"
+                        android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Description Text -->
+            <TextView
+                android:id="@+id/descriptionText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text=" "
+                android:textSize="14sp"
+                android:gravity="center"
+                android:background="@drawable/curved_blue_background"
+                android:padding="16dp"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+
+
+
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/curved_background"
             android:padding="16dp"
-            android:layout_marginBottom="24dp">
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="45dp">
+            <!-- Chart Section -->
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/lineChart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="16dp" />
 
             <TextView
-                android:id="@+id/condition_title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true"
-                android:text="Condition"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                android:textColor="#000000" />
-
-            <LinearLayout
-                android:id="@+id/condition_info"
+                android:id="@+id/linearPrediction"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/condition_title"
-                android:layout_marginTop="16dp"
-                android:orientation="horizontal"
-                android:gravity="center">
-
-                <TextView
-                    android:id="@+id/aqi"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_marginEnd="50dp"
-                    android:background="@drawable/circle_aqi"
-                    android:gravity="center"
-                    android:text="205\nAQI"
-                    android:textColor="#FFFFFF"
-                    android:textStyle="bold"
-                    android:textSize="14sp" />
-
-                <TextView
-                    android:id="@+id/humidity"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:background="@drawable/circle_humidity"
-                    android:gravity="center"
-                    android:text="30° C\nHumidity"
-                    android:textColor="#FFFFFF"
-                    android:textStyle="bold"
-                    android:textSize="14sp"
-                    android:layout_marginStart="16dp" />
-            </LinearLayout>
-
-            <TextView
-                android:id="@+id/warning_text"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/condition_info"
-                android:layout_marginTop="16dp"
-                android:background="@drawable/curved_warning"
-                android:padding="16dp"
-                android:text="Very Unhealthy\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sodales vel mi et mattis. Donec porttitor scelerisque porta."
-                android:textColor="#FFFFFF"
-                android:textSize="15sp" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/curved_background"
-            android:padding="16dp">
-
-            <TextView
-                android:id="@+id/Detail_tittle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true"
-                android:text="Detail"
-                android:textSize="20sp"
+                android:text="Prediction "
+                android:gravity="center"
+                android:textSize="18sp"
                 android:textStyle="bold"
-                android:textColor="#000000" />
+                android:textColor="@color/black"/>
         </RelativeLayout>
+
     </LinearLayout>
 </ScrollView>

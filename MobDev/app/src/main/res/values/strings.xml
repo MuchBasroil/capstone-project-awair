@@ -1,7 +1,8 @@
 <resources>
-    <string name="app_name">CapstoneEmissionCarbon</string>
+    <string name="app_name">AWAIR</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
-    <string name="already_have_account">Already have an account? <font color="#0000FF">Login here</font></string>
+    <string name="profile">Profile</string>
+    <string name="history">History</string>
+    <string name="forgot_password_label">Forgot Password</string>
+
 </resources>
