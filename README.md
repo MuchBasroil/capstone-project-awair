@@ -40,7 +40,8 @@ Air pollution is a serious issue in many urban areas, impacting public health, c
 
 
 ## Screenshots
-[pict - 1](https://github.com/user-attachments/assets/9b7b430a-d3a9-4f7e-81fa-77382ac0326f)
+<img src="(https://github.com/user-attachments/assets/9b7b430a-d3a9-4f7e-81fa-77382ac0326f)" alt="Alt Text" width="300">
+
 ![pict - 2](https://github.com/user-attachments/assets/d38bd038-7cb0-47e0-86ef-fe4d710f46b0)
 ![pict - 3](https://github.com/user-attachments/assets/2b26f1aa-eeb1-4062-87c4-1aec9f3b13d7)
 ![pict - 4](https://github.com/user-attachments/assets/bcb6e0e7-9d96-405b-8311-20358613a223)
