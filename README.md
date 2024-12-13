@@ -43,7 +43,7 @@ Air pollution is a serious issue in many urban areas, impacting public health, c
 
 
 ## Video Demo
-[Video Demo Link](https://youtu.be/zyE5q8csYjM)
+[Video Demo Link](https://youtu.be/zyE5q8csYjM](https://youtu.be/JkaVxKGu9t8?si=X665TrayDPOlvRjK)
 
 ## Our Repositories
 [Awair](https://github.com/MuchBasroil/capstone-project-awair)
