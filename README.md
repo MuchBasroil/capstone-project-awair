@@ -18,7 +18,7 @@ The Awair Project is a mobile application designed to monitor and assess air qua
 Air pollution is a serious issue in many urban areas, impacting public health, climate, and the environment. People often lack real-time data on air quality, which can lead to exposure to harmful pollutants. The Awair Project solves this by providing up-to-date air quality information, raising awareness, and promoting healthier lifestyle choices based on environmental conditions.
 
 ## Team Members
-![MENTALQ-PPT](https://github.com/user-attachments/assets/1ecf3202-9d98-40c9-9c4a-33ed673a205d)
+![Member-Awair](https://github.com/user-attachments/assets/08975600-92a2-49b1-946c-3d9350e12eea)
 
 | Bangkit ID      | Name                           | Learning Path     | University                     | LinkedIn                                                                                                                                      |
 |-----------------|--------------------------------|-------------------|--------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
