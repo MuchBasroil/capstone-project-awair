@@ -40,7 +40,16 @@ Air pollution is a serious issue in many urban areas, impacting public health, c
 
 
 ## Screenshots
-
+[pict - 1](https://github.com/user-attachments/assets/9b7b430a-d3a9-4f7e-81fa-77382ac0326f)
+![pict - 2](https://github.com/user-attachments/assets/d38bd038-7cb0-47e0-86ef-fe4d710f46b0)
+![pict - 3](https://github.com/user-attachments/assets/2b26f1aa-eeb1-4062-87c4-1aec9f3b13d7)
+![pict - 4](https://github.com/user-attachments/assets/bcb6e0e7-9d96-405b-8311-20358613a223)
+![pict - 5](https://github.com/user-attachments/assets/8cb9cb68-57df-4eb0-b325-ae12726e7563)
+![pict - 6](https://github.com/user-attachments/assets/da82e486-48ca-4867-b905-75009d5b0efd)
+![pict - home](https://github.com/user-attachments/assets/62ac86aa-1813-456b-ae61-1006c0fad161)
+![pict - 7](https://github.com/user-attachments/assets/8a7fb3c7-aacc-4dd9-b0a7-ba657f398a2d)
+![pict - 8](https://github.com/user-attachments/assets/af05f043-6cfe-4455-867c-23160d6b94be)
+![pict - 9](https://github.com/user-attachments/assets/496b5d7e-8317-493c-8fb8-4944c7358293)
 
 ## Video Demo
 [Video Demo Link](https://youtu.be/JkaVxKGu9t8?si=X665TrayDPOlvRjK)
