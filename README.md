@@ -6,7 +6,7 @@ Team ID: C242-PS318
 
 Project Name: Awair 🥦
 
-![image](https://github.com/user-attachments/assets/2cd08361-188c-4199-a1f6-e9b76df2b9c4)
+![image](https://github.com/user-attachments/assets/4b35bf89-5b83-4732-9ba3-d1170e89fd20)
 
 
 Theme: Health Innovation: BE AWARE, BREATH THE AIR.
@@ -49,4 +49,4 @@ Air pollution is a serious issue in many urban areas, impacting public health, c
 [Awair](https://github.com/MuchBasroil/capstone-project-awair)
 
 ## Download Our Apps
-You can download it here: [Download Link](https://drive.google.com/drive/folders/17OMxdNMiDujlPFGmDOYREAE1iCrxMXh8?usp=drive_link)
+You can download it here: [Download Link](https://storage.googleapis.com/bungkit-awairs/Awair.apk)
